@@ -1,0 +1,24 @@
+pkgbase = qgroundcontrol-bin
+	pkgdesc = Cross-platform ground control station for MAVLink drones (extracted from official AppImage)
+	pkgver = 5.0.8
+	pkgrel = 1
+	url = https://github.com/mavlink/qgroundcontrol
+	install = qgroundcontrol-bin.install
+	arch = x86_64
+	license = Apache-2.0 OR GPL-3.0-only
+	depends = glibc
+	depends = gcc-libs
+	depends = libglvnd
+	depends = libx11
+	depends = libxcb
+	depends = wayland
+	depends = hicolor-icon-theme
+	optdepends = speech-dispatcher: text-to-speech announcements
+	provides = qgroundcontrol
+	conflicts = qgroundcontrol
+	options = !strip
+	options = !debug
+	source = QGroundControl-5.0.8-x86_64.AppImage::https://github.com/mavlink/qgroundcontrol/releases/download/v5.0.8/QGroundControl-x86_64.AppImage
+	sha256sums = 06969c67ef58ea063def0a8271447a1cc385438c4a7df36813315b4475146737
+
+pkgname = qgroundcontrol-bin
