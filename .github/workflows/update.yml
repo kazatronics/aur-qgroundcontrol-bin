@@ -78,7 +78,9 @@ jobs:
         with:
           pkgname: qgroundcontrol-bin
           pkgbuild: ./PKGBUILD
-          assets: qgroundcontrol-bin.install
+          assets: |
+            qgroundcontrol-bin.install
+            .gitignore
           commit_username: ${{ vars.AUR_USERNAME }}
           commit_email: ${{ vars.AUR_EMAIL }}
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
