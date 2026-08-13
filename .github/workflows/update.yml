@@ -42,8 +42,10 @@ jobs:
             echo "::notice::Already up to date: $CURRENT"
           fi
 
+      # Only on a real version change: a forced run redeploys the current
+      # PKGBUILD as-is, so it must not clobber a hand-made pkgrel bump.
       - name: Update PKGBUILD version
-        if: steps.check.outputs.update == 'true' || inputs.force
+        if: steps.check.outputs.update == 'true'
         run: |
           VERSION="${{ steps.check.outputs.latest }}"
           sed -i "s/^pkgver=.*/pkgver=${VERSION}/" PKGBUILD
