@@ -12,8 +12,9 @@ The full AppDir from `QGroundControl-x86_64.AppImage`, installed to
   QML modules, and GStreamer plugins
 - **Launcher:** `/usr/bin/qgroundcontrol` (symlink to the upstream `AppRun`,
   which sets up the bundled library paths)
-- **Desktop integration:** `.desktop` entry, hicolor icons (16–256 px), and
-  AppStream metadata installed to the usual `/usr/share` locations
+- **Desktop integration:** `.desktop` entry, hicolor icons (whatever sizes and
+  formats upstream ships), and AppStream metadata installed to the usual
+  `/usr/share` locations
 
 Because the AppImage is extracted at build time, no FUSE/AppImage runtime is
 needed and the app integrates like any other package.
