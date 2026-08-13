@@ -1,4 +1,4 @@
-# Maintainer: TODO <TODO>
+# Maintainer: Kaz Walker <me@kaz.codes>
 pkgname=qgroundcontrol-bin
 pkgver=5.1.0
 pkgrel=1
